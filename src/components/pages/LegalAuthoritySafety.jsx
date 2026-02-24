@@ -2,6 +2,13 @@
 import "../../assets/css/LegalAuthoritySafety.css";
 import AnimatedCounter from "../AnimatedCounter";
 
+import user1 from "../../assets/images/gglrating/user1_abhishek_M.png";
+import user2 from "../../assets/images/gglrating/user2_rushikesh_S.png";
+import user3 from "../../assets/images/gglrating/user3_rajan_G.png";
+import user4 from "../../assets/images/gglrating/user4_omkar_P.png";
+import user5 from "../../assets/images/gglrating/user5_pratham_D.png";
+import ratingImg from "../../assets/images/rating.png";
+
 function LegalAuthoritySafety() {
   // const [reviews, setReviews] = useState([]);
 
@@ -14,39 +21,39 @@ function LegalAuthoritySafety() {
 
 const reviews = [
   {
-    "name": "Abhishek Margale",
-    "rating": 4.9,
-    "text": "Authentic and very fast service. We satisfy..Gratitude thanks...",
-    "time": "2 weeks ago",
-    "profilePhoto": "./src/assets/images/gglrating/user1_abhishek_M.png"
+    name: "Abhishek Margale",
+    rating: 4.9,
+    text: "Authentic and very fast service. We satisfy..Gratitude thanks...",
+    time: "2 weeks ago",
+    profilePhoto: user1
   },
   {
-    "name": "Rushikesh Shahane",
-    "rating": 5,
-    "text": "Very good service. The agreement process was smooth and completed on time. Charges are reasonable. Highly recommended",
-    "time": "2 weeks ago",
-    "profilePhoto": "../src/assets/images/gglrating/user2_rushikesh_S.png"
+    name: "Rushikesh Shahane",
+    rating: 5,
+    text: "Very good service...",
+    time: "2 weeks ago",
+    profilePhoto: user2
   },
   {
-    "name": "Rajan Ghosh",
-    "rating": 5,
-    "text": "Very prompt and efficient service provided. Provided total doorstep service without any hassale. Highly recommended",
-    "time": "3 months ago",
-    "profilePhoto": "../src/assets/images/gglrating/user3_rajan_G.png"
+    name: "Rajan Ghosh",
+    rating: 5,
+    text: "Very prompt and efficient service...",
+    time: "3 months ago",
+    profilePhoto: user3
   },
   {
-    "name": "Omkar Palange",
-    "rating": 4.9,
-    "text": "Excellent service by Legalwing! They made my online rent agreement process in Pune very easy and quick. Highly professional and reliable team.",
-    "time": "2 weeks ago",
-    "profilePhoto": "../src/assets/images/gglrating/user4_omkar_P.png"
+    name: "Omkar Palange",
+    rating: 4.9,
+    text: "Excellent service by Legalwing!",
+    time: "2 weeks ago",
+    profilePhoto: user4
   },
   {
-    "name": "Pratham Devle",
-    "rating": 5,
-    "text": "Good service and excellent staff",
-    "time": "2 months ago",
-    "profilePhoto": "../src/assets/images/gglrating/user5_pratham_D.png"
+    name: "Pratham Devle",
+    rating: 5,
+    text: "Good service and excellent staff",
+    time: "2 months ago",
+    profilePhoto: user5
   }
 ];
 
@@ -150,7 +157,7 @@ const reviews = [
               <div className="col-6">
                 <div className="stat-card d-grid d-md-flex align-items-center justify-content-center p-4">
                   <img
-                    src="../src/assets/images/rating.png"
+                    src={ratingImg}
                     width="95"
                     alt=""
                     className="ratingClass me-1 me-md-2"
@@ -198,15 +205,15 @@ const reviews = [
             <div className="trust-card d-flex align-items-center justify-content-between">
               <div className="avatars d-none d-md-block d-md-flex">
                 <span>
-                  <img src="../src/assets/images/user.png" width="25" alt="" />
+                  <img src={user1} width="25" alt="" />
                 </span>
-                <span>👤</span>
+                <span><img src={user2} width="25" alt="" /></span>
                 <span>
-                  <img src="../src/assets/images/user.png" width="25" alt="" />
+                  <img src={user3} width="25" alt="" />
                 </span>
                 <span className="count">+2k</span>
               </div>
-              <p className="mb-0 fw-semibold">
+              <p className="mb-0 fw-semibold text-center">
                 16000+ Satisfied and Trusted Pune Residents
               </p>
             </div>
