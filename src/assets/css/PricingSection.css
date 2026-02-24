@@ -1,0 +1,116 @@
+.pricing-wrapper {
+    padding: 55px 0;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: #fff;
+}
+
+/* Headings */
+.pricing-heading {
+    text-align: center;
+    font-weight: 800;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.pricing-desc {
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+/* Left info */
+.pricing-info {
+    padding-right: 20px;
+}
+
+.pricing-info h4 {
+    margin-bottom: 20px;
+}
+
+.pricing-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+.pricing-info svg {
+    color: #01ff3a;
+}
+
+/* Glass card */
+.price-glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    border-radius: 22px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+.badge-tag {
+    background: #00ff68b3;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+/* Animated price */
+.animated-price {
+    font-size: 56px;
+    font-weight: 800;
+    margin: 25px 0 5px;
+}
+
+.plus {
+    font-size: 26px;
+    margin-left: 4px;
+}
+
+.small-note {
+    font-size: 13px;
+    color: #cbd5f5;
+}
+
+/* Govt fees */
+.govt-fee-box {
+    margin-top: 25px;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    text-align: left;
+}
+
+.govt-fee-box div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+/* Button */
+.price-glass-card .btn {
+    border-radius: 30px;
+    padding: 12px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-heading {
+        font-size: 30px;
+    }
+
+    .animated-price {
+        font-size: 44px;
+    }
+
+    .price-glass-card {
+        padding: 28px;
+    }
+}

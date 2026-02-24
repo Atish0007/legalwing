@@ -1,0 +1,269 @@
+.legal-authority-section {
+    background: #f4f7fb;
+}
+
+/* Highlight text */
+.highlight {
+    color: #16836c;
+    font-weight: 600;
+}
+
+/* Security items */
+.security-item {
+    display: flex;
+    gap: 14px;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.security-item .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgb(53 220 113 / 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #198754;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.security-item h6 {
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.security-item p {
+    font-size: 14px;
+    color: #777777 !important;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Stat cards */
+.stat-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 26px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card h2 {
+    color: #16836c;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease;
+    margin-bottom: 6px;
+}
+.stat-card:hover h2 {
+  transform: scale(1.05);
+}
+
+.stat-card p {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Trust card */
+.trust-card {
+    background: #ffffff;
+    padding: 20px 24px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatars span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: -25px;
+    border: 3px solid #FFF;
+}
+
+.avatars .count {
+    background: #16836c;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .stat-card {
+        padding: 20px;
+    }
+}
+
+
+
+/* Google Rating css */
+/* .google-review-card {
+  width: 100%;
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.review-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.review-title span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.review-slider {
+  overflow: hidden;
+}
+
+.review-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.review-item {
+  min-width: 100%;
+  padding: 20px;
+}
+
+.review-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .review-text {
+    font-size: 14px;
+  }
+
+  .google-review-card {
+    padding: 20px;
+  }
+} */
+
+.rating-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.rating-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: slide-left 30s linear infinite;
+}
+
+.rating-card {
+  min-width: 320px;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.rating-card:hover {
+  transform: translateY(-6px);
+}
+
+.rating-stars {
+  color: #fbbf24;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.rating-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.rating-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+/* Continuous slide */
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.rating-carousel:hover .rating-track {
+  animation-play-state: paused;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .rating-card {
+    min-width: 260px;
+  }
+}
+
+
+/* Rating Img */
+.ratingClass{
+      transform: scale(1.7);
+}

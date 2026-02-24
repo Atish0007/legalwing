@@ -1,0 +1,126 @@
+/* ===== legal Header Base ===== */
+.legal-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  /* background: rgba(245, 245, 247, 0.9); legal light grey */
+  /* background: linear-gradient(135deg, rgba(63, 127, 78, 0.95), rgba(155, 206, 66, 0.95)), radial-gradient(circle at top left, rgba(255, 255, 255, 0.12), transparent); */
+  /* background: linear-gradient(90deg, #1abf00 0%, #6ac771 100%); */
+  background: linear-gradient(90deg, #015f5d 0%, #57f39a 100%);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+/* show / hide animation */
+.legal-header.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.legal-header.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* ===== Container spacing (legal-style) ===== */
+/* .legal-container {
+  max-width: 1200px;
+  padding: 14px 24px;
+} */
+
+/* ===== Brand ===== */
+.brand-icon {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0px 15px;
+}
+.legal-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.4px;
+  color: #fff; /*#0f3d91;*/
+  transition: all 0.3s ease-in;
+}
+.navbar-brand:focus, .navbar-brand:hover{
+    color:#fff !important;
+    filter: drop-shadow(0px 0px 20px #fff);
+}
+
+/* ===== Menu ===== */
+.legal-menu .nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff !important; /*#1d1d1f*/
+  padding: 8px 18px;
+  transition: all 0.3s ease-in;
+}
+
+.legal-menu .nav-link:hover {
+  color: #000 !important;
+}
+
+/* ===== CTA Buttons ===== */
+.legal-cta .btn {
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legal-whatsapp {
+  background: #015f5d70;
+  color: #fff;
+  /* background: #41f985;
+  color: #000; */
+  /* background: #25d366;
+  color: #fff; */
+}
+
+.legal-call {
+  background: #396899;
+  color: #fff;
+}
+
+/* .legal-whatsapp:hover,
+.legal-call:hover {
+  opacity: 0.9;
+  color: #fff;
+} */
+
+.legal-whatsapp,
+.legal-call {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+/* WhatsApp Hover */
+.legal-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(37, 211, 102, 0.35);
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+}
+
+/* Call Button Hover */
+.legal-call:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 113, 227, 0.35);
+  background: linear-gradient(135deg, #007fff, #2f98ff);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .legal-menu {
+    text-align: center;
+    padding-top: 12px;
+  }
+
+  .legal-cta {
+    flex-direction: column;
+    margin-top: 12px;
+  }
+}
