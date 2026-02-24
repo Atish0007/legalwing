@@ -41,7 +41,7 @@ export default function PricingSection() {
 
 
   return (
-    <section className="pricing-wrapper">
+    <section className="pricing-wrapper py-5">
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="pricing-heading">Transparent & Lowest <span className="HeadCstmColor">Pricing</span></h2>
@@ -52,7 +52,7 @@ export default function PricingSection() {
 
         <div className="row align-items-center g-4">
           {/* LEFT INFO */}
-          <div className="col-lg-6">
+          <div className="col-lg-6 ps-5">
             <div className="pricing-info">
               <h4>Rent Agreement Package Includes:</h4>
 

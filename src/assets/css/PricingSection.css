@@ -103,7 +103,7 @@
 /* Responsive */
 @media (max-width: 768px) {
     .pricing-heading {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .animated-price {
@@ -113,4 +113,7 @@
     .price-glass-card {
         padding: 28px;
     }
+    /* .pricing-info {
+        margin-left: 25px;
+    } */
 }

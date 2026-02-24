@@ -25,7 +25,7 @@ const tenantsBenefits = [
 
 export default function AgreementBenefits() {
     return (
-        <section className="agreement-section">
+        <section className="agreement-section py-4">
             <div className="container">
 
                 <div className="text-center mb-5">

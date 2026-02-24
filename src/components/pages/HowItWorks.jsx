@@ -40,7 +40,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="how-section py-5">
+    <section className="how-section py-4">
 
       <div className="container">
         <h2 className="how-title">How It <span className="HeadCstmColor">Works</span></h2>

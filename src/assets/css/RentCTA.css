@@ -1,11 +1,11 @@
 .cta-alt-section {
   background: linear-gradient(135deg, #2E3440 0%, #3F4652 50%, #1F2937 100%);
   /* background: radial-gradient(circle at top, #0f172a, #020617); */
-  padding: 90px 16px;
+  padding: 55px 16px;
 }
 
 .cta-alt-wrapper {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
   display: flex;
   justify-content: center;

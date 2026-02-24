@@ -45,14 +45,14 @@ export default function FaqSection() {
 
 
   return (
-    <section className="faq-section m-0">
+    <section className="faq-section m-0 py-4">
       <div className="container">
-        <div className="row g-5 align-items-center">
+        <div className="row g-4 align-items-center">
 
           {/* LEFT CONTENT */}
-          <div className="col-lg-5" > {/* data-aos="fade-right" */}
+          <div className="col-lg-5"> {/* data-aos="fade-right" */}
             <h2 className="faq-title text-center text-md-start">Frequently <span className="HeadCstmColor">Asked</span> Questions</h2>
-            <p className="faq-subtitle">
+            <p className="faq-subtitle text-center text-md-start">
               Clear answers to common questions about registered rent agreements.
             </p>
 
@@ -62,7 +62,7 @@ export default function FaqSection() {
           </div>
 
           {/* RIGHT FAQ */}
-          <div className="col-lg-7" > {/* data-aos="fade-left" */}
+          <div className="col-lg-7"> {/* data-aos="fade-left" */}
             <div className="faq-card">
               {faqs.map((item, i) => (
                 <div

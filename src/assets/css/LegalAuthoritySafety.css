@@ -195,7 +195,8 @@
   display: flex;
   gap: 24px;
   width: max-content;
-  animation: slide-left 30s linear infinite;
+  animation: slide-left 60s linear infinite;
+  will-change: transform;
 }
 
 .rating-card {
@@ -255,10 +256,10 @@
   animation-play-state: paused;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .rating-card {
-    min-width: 260px;
+/* ===== Touch devices pause ===== */
+@media (hover: none) {
+  .rating-carousel:active .rating-track {
+    animation-play-state: paused;
   }
 }
 
@@ -267,3 +268,24 @@
 .ratingClass{
       transform: scale(1.7);
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .rating-card {
+    min-width: 260px;
+  }
+  .rating-track {
+    gap: 16px;
+    animation-duration: 80s; /* slower on mobile */
+  }
+  .ratingClass{
+    width: 60px !important;  
+    margin-left: 15px;
+    transform: scale(2.7);
+  }
+  .stat-card h2{
+    font-size: 20px;
+  }
+}
+
+

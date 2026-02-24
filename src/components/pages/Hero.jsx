@@ -12,7 +12,7 @@ function Hero() {
         <div className="row align-items-center gy-5 pt-5">
 
           {/* LEFT CONTENT */}
-          <div className="col-lg-6 text-start" data-aos="fade-right">
+          <div className="col-lg-6 text-start"> {/* data-aos="fade-right" */}
             <span className="hero-badge">AUTHORIZED LEGAL PARTNER</span>
 
             <h1 className="hero-title">
@@ -40,7 +40,7 @@ function Hero() {
               </button>
             </div>
 
-            <div className="hero-features">
+            <div className="hero-features d-grid d-md-flex">
               <span><FaCheckCircle /> 100% Legal</span>
               <span><FaCheckCircle /> 24-48hr Process</span>
             </div>

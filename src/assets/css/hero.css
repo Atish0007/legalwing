@@ -125,17 +125,25 @@
 /* Mobile */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 70px 0 40px;
+    padding: 30px 0 40px;
   }
-
+  .homeBG{
+    min-height: unset !important;
+    background-position: 10% 100%;
+  }
+  
   .hero-title {
     font-size: 2.1rem;
   }
 
+  .hero-subtitle {
+    font-size: 13px;
+  }
+  
   .hero-image {
     max-width: 100%;
   }
-
+  
   .hero-card {
     bottom: -12px;
   }

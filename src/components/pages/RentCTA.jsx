@@ -20,7 +20,7 @@ export default function RentCTAAlt() {
 
 
     return (
-        <section className="cta-alt-section">
+        <section className="cta-alt-section py-5">
             <div className="cta-alt-wrapper">
 
                 <div className="cta-alt-content text-center">

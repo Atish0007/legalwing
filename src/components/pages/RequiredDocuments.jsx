@@ -24,7 +24,7 @@ const documents = [
 
 export default function RequiredDocuments() {
   return (
-    <section className="docs-section">
+    <section className="docs-section py-4">
       <div className="container">
         <h2 className="docs-title">
           Required <span className="HeadCstmColor">Documents</span>

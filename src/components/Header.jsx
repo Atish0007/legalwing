@@ -44,6 +44,7 @@ function Header() {
 
     return (
         <header className={`legal-header ${showHeader ? "show" : "hide"}`}>
+            <div className="container">
             <nav className="navbar navbar-expand-lg">
                 <div className="container legal-container">
 
@@ -69,9 +70,9 @@ function Header() {
                     <div className="collapse navbar-collapse" id="legalNavbar">
                         <ul className="navbar-nav mx-auto legal-menu">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">About Us</a>
+                                {/* <a className="nav-link" href="#">About Us</a> */}
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a className="nav-link" href="#">Services</a>
                             </li>
                             <li className="nav-item">
@@ -79,7 +80,7 @@ function Header() {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Support</a>
-                            </li>
+                            </li> */}
                         </ul>
 
                         {/* CTA */}
@@ -95,6 +96,7 @@ function Header() {
 
                 </div>
             </nav>
+            </div>
         </header>
     )
 }
