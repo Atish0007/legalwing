@@ -25,7 +25,7 @@ const tenantsBenefits = [
 
 export default function AgreementBenefits() {
     return (
-        <section className="agreement-section py-4">
+        <section className="agreement-section py-4" id="show-fixed-whatsapp-button">
             <div className="container">
 
                 <div className="text-center mb-4 mb-md-5">

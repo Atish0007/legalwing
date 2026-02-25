@@ -25,18 +25,15 @@ export default function PricingSection() {
 
 
   const handleWhatsApp = () => {
+        const msg =
+            "नमस्कार,\n" +
+            "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
+            "धन्यवाद!";
 
-        const message = "Hello, \n" +
-                        "I am looking for a Rent Agreement service.\n\n" +
-                        "Please share:\n" +
-                        "• Process\n" +
-                        "• Required documents\n" +
-                        "• Charges\n\n" +
-                        "Thanks!";
-        //const message = `नमस्कार, \n मला भाडेकरार (Rent Agreement) संदर्भात माहिती हवी आहे.\n कृपया process आणि charges कळवा. \n\nधन्यवाद!`;
-
-        const whatsappUrl = `https://wa.me/917709415315?text=${encodeURIComponent(message)}`;
-        window.open(whatsappUrl, "_blank");
+        window.open(
+            `https://wa.me/917709415315?text=${encodeURIComponent(msg)}`,
+            "_blank"
+        );
     };
 
 

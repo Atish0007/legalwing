@@ -99,3 +99,8 @@
     margin-left: 42px;
   }
 }
+@media (max-width: 600px){
+  .faq-info-box{
+    text-align: center;
+  }
+}

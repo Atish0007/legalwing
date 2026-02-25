@@ -54,11 +54,15 @@
 }
 
 .badge-tag {
-    background: #00ff68b3;
     padding: 6px 16px;
     border-radius: 30px;
     font-size: 12px;
     display: inline-block;
+    background: linear-gradient(180deg, #24b964f7, #404040);
+    color: #ededed;
+    font-weight: 500;
+    /* margin-bottom: 18px; */
+    filter: drop-shadow(0px 0px 50px #dcdcdc);
 }
 
 /* Animated price */

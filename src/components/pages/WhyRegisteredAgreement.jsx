@@ -22,7 +22,7 @@ function WhyRegisteredAgreement() {
     ];
 
     return (
-        <section className="rent-why-section py-4">
+        <section className="rent-why-section py-4" id="show-fixed-draft-button">
             <div className="container">
 
                 {/* Heading */}

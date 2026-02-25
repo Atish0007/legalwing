@@ -5,16 +5,29 @@ import { FaMapPin } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import "../../assets/css/hero.css";
 import { MdCheckCircle } from "react-icons/md";
-import heroImage from "../../assets/images/heroImage1.png";
+// import heroImage from "../../assets/images/heroImage1.png";
 
 function Hero() {
+
+  const handleWhatsApp = () => {
+        const msg =
+            "नमस्कार,\n" +
+            "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
+            "धन्यवाद!";
+
+        window.open(
+            `https://wa.me/917709415315?text=${encodeURIComponent(msg)}`,
+            "_blank"
+        );
+    };
+
   return (
     <section className="hero-section homeBG">
       <div className="container">
         <div className="row align-items-center gy-5 pt-5">
 
           {/* LEFT CONTENT */}
-          <div className="col-lg-6 text-start"> {/* data-aos="fade-right" */}
+          <div className="col-lg-6 text-start"> 
             <span className="hero-badge">AUTHORIZED LEGAL PARTNER</span>
 
             <h1 className="hero-title">
@@ -62,12 +75,12 @@ function Hero() {
 
           {/* Mobile View Only Buttons */}
           <div className="hero-actions d-block d-md-none d-grid">
-              <button className="btn btn-success hero-btn">
+              <button className="btn btn-success hero-btn" onClick={handleWhatsApp}>
                 Check Your Price
               </button>
-              <button className="btn btn-outline-success hero-btn-outline">
+              <a href="tel:7709415315" className="btn btn-outline-success hero-btn-outline">
                <FaPhone /> Talk to Expert
-              </button>
+              </a>
             </div>
 
           {/* RIGHT IMAGE */}

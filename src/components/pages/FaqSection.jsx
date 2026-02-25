@@ -1,47 +1,49 @@
 import { useEffect, useState } from "react";
 import { Plus, Dash } from "react-bootstrap-icons";
-//import { FaPlus, FaMinus } from "react-icons/fa";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import "../../assets/css/FaqSection.css";
+import faqImg from "../../assets/images/faq.png";
 
 const faqs = [
   {
-    q: "Is rent agreement registration mandatory in Maharashtra?",
-    a: "Yes. A registered rent agreement is mandatory and is considered a valid legal proof in Maharashtra."
+    q: "What is the New Rent Act (Model Tenancy Act 2021)?",
+    a: "The Model Tenancy Act, 2021 is a law introduced by the Government of India to regulate rental housing, protect the rights of landlords and tenants, and reduce disputes through a clear legal framework."
   },
   {
-    q: "Is a notarized rent agreement legally valid?",
-    a: "No. Notarized agreements are not accepted for police verification, banks, or most government services."
+    q: "Is a written Rent Agreement mandatory under the New Rent Act?",
+    a: "Yes. A written rent agreement is compulsory. The agreement must clearly mention rent amount, security deposit, duration, notice period, and other terms."
   },
   {
-    q: "How long does it take to complete the registration?",
-    a: "The digital copy is delivered within 24 hours and the physical copy within 48 hours."
+    q: "Is registration of Rent Agreement required?",
+    a: "Yes. The agreement must be submitted to the Rent Authority within the prescribed time after execution. Both landlord and tenant are required to inform the Rent Authority."
   },
   {
-    q: "Is biometric verification done at home?",
-    a: "Yes. Our executive visits your location for doorstep biometric and photo verification."
+    q: "What is the maximum security deposit allowed?",
+    a: "Under the Model Tenancy Act: Residential property: Maximum 2 months’ rent Commercial property: Maximum 6 months’ rent Landlords cannot demand excessive deposits beyond this limit."
   },
   {
-    q: "What if the owner or tenant is not available?",
-    a: "Biometric presence of both parties is mandatory. Appointments can be rescheduled if required."
+    q: "Who is responsible for property maintenance?",
+    a: "The Act clearly divides responsibilities: ✔️ Landlord’s responsibility: Structural repairs Whitewashing (if agreed) Major plumbing & electrical repairs ✔️ Tenant’s responsibility: Minor repairs Routine maintenance Keeping property in good condition"
   },
   {
-    q: "What is the validity period of the rent agreement?",
-    a: "Generally, the agreement is valid for 11 months, or as per mutual agreement."
+    q: "Can the landlord increase rent anytime?",
+    a: "No. Rent can only be revised as per terms mentioned in the agreement.Proper notice (as agreed) must be given before increasing rent."
+  },
+  {
+    q: "What is the notice period to vacate?",
+    a: "The notice period should be clearly mentioned in the agreement. If not specified, generally one month notice is required for residential property."
+  },
+  {
+    q: "Can a landlord forcefully evict a tenant?",
+    a: "No. The landlord cannot evict a tenant without following legal procedure. Eviction must be done through the Rent Authority as per the Act."
+  },
+  {
+    q: "What if the tenant does not pay rent?",
+    a: "If the tenant fails to pay rent: Landlord can approach Rent Authority Tenant may be given time to clear dues Continuous default may lead to eviction"
   }
 ];
 
 export default function FaqSection() {
   const [active, setActive] = useState(null);
-
-//   useEffect(() => {
-//     AOS.init({
-//       duration: 900,
-//       easing: "ease-in-out",
-//       once: true
-//     });
-//   }, []);
 
 
   return (
@@ -50,15 +52,28 @@ export default function FaqSection() {
         <div className="row g-4 align-items-center">
 
           {/* LEFT CONTENT */}
-          <div className="col-lg-5"> {/* data-aos="fade-right" */}
+          <div className="col-lg-5">
             <h2 className="faq-title text-center text-md-start">Frequently <span className="HeadCstmColor">Asked</span> Questions</h2>
             <p className="faq-subtitle text-center text-md-start">
               Clear answers to common questions about registered rent agreements.
             </p>
 
-            <div className="faq-info-box">
+
+
+            {/* FAQ IMAGE */}
+            <div className="faq-image-wrapper text-center text-lg-start mt-0">
+              <img
+                src={faqImg}
+                alt="Rent Agreement FAQ"
+                className="img-fluid faq-image"
+              />
+            </div>
+
+            <div className="faq-info-box text-center">
               Government Registered • Secure • Trusted
             </div>
+
+
           </div>
 
           {/* RIGHT FAQ */}

@@ -34,9 +34,9 @@
 
 /* ===== Brand ===== */
 .brand-icon {
-  color: #fff;
-  font-size: 1.4rem;
-  margin: 0px 15px;
+  width: 40px;
+  transform: scale(1.7);
+  margin-right: 15px;
 }
 
 .legal-brand {

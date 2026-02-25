@@ -1,114 +1,121 @@
 .legal-authority-section {
-    background: #f4f7fb;
+  background: #f4f7fb;
 }
 
 /* Highlight text */
 .highlight {
-    color: #16836c;
-    font-weight: 600;
+  color: #16836c;
+  font-weight: 600;
 }
 
 /* Security items */
 .security-item {
-    display: flex;
-    gap: 14px;
-    background: #ffffff;
-    padding: 16px;
-    border-radius: 14px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    height: 100%;
+  display: flex;
+  gap: 14px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  height: 100%;
 }
 
 .security-item .icon {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: rgb(53 220 113 / 8%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #198754;
-    font-size: 15px;
-    padding: 16px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgb(53 220 113 / 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #198754;
+  font-size: 15px;
+  padding: 16px;
 }
 
 .security-item h6 {
-    margin-bottom: 4px;
-    font-weight: 600;
+  margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .security-item p {
-    font-size: 14px;
-    color: #777777 !important;
-    font-weight: 500;
-    margin: 0;
+  font-size: 14px;
+  color: #777777 !important;
+  font-weight: 500;
+  margin: 0;
 }
 
 /* Stat cards */
 .stat-card {
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 26px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .stat-card h2 {
-    color: #16836c;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    transition: transform 0.3s ease;
-    margin-bottom: 6px;
+  color: #16836c;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+  margin-bottom: 6px;
 }
+
 .stat-card:hover h2 {
   transform: scale(1.05);
 }
 
 .stat-card p {
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    color: #6b7280;
-    margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #6b7280;
+  margin: 0;
 }
 
 /* Trust card */
 .trust-card {
-    background: #ffffff;
-    padding: 20px 24px;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .avatars {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .avatars span {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #e5e7eb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    margin-right: -25px;
-    border: 3px solid #FFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-right: -25px;
+  border: 3px solid #FFF;
 }
 
 .avatars .count {
-    background: #16836c;
-    color: #fff;
-    font-weight: 600;
+  background: #16836c;
+  color: #fff;
+  font-weight: 600;
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-    .stat-card {
-        padding: 20px;
-    }
+  .stat-card {
+    height: 120px !important;
+  }
+}
+
+@media (max-width: 1092px) {
+  .stat-card {
+    height: 120px !important;
+  }
 }
 
 
@@ -246,6 +253,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -265,8 +273,8 @@
 
 
 /* Rating Img */
-.ratingClass{
-      transform: scale(1.7);
+.ratingClass {
+  transform: scale(1.7);
 }
 
 /* Mobile */
@@ -274,21 +282,24 @@
   .rating-card {
     min-width: 260px;
   }
+
   .rating-track {
     gap: 16px;
-    animation-duration: 80s; /* slower on mobile */
+    animation-duration: 80s;
+    /* slower on mobile */
   }
-  .ratingClass{
-    width: 55px !important;  
+
+  .ratingClass {
+    width: 55px !important;
     /* margin-left: 15px;
     transform: scale(2.7); */
   }
-  .stat-card h2{
+
+  .stat-card h2 {
     font-size: 20px;
   }
-  .trust-card{
+
+  .trust-card {
     gap: 20px;
   }
 }
-
-

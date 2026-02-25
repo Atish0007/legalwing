@@ -3,6 +3,7 @@
   background: radial-gradient(circle at top, #0f1f2d, #08131d);
   color: #d1d5db;
   font-size: 14px;
+  padding-bottom: 60px;
 }
 
 .legal-footer-brand {
@@ -17,12 +18,14 @@
 .legal-footer-brand:focus,
 .legal-footer-brand:hover {
   color: #fff !important;
-  filter: drop-shadow(0px 0px 20px #fff);
+  filter: drop-shadow(0px 0px 20px #dcdcdc);
 }
-.ftr-brand-icon {
-  color: #fff;
-  font-size: 1.9rem;
-  margin: 0px 15px;
+
+.footer-brand-icon {
+  width: 40px;
+  transform: scale(1.8);
+  margin-right: 15px;
+  filter: drop-shadow(0px 0px 6px #fff);
 }
 
 
@@ -60,8 +63,9 @@
   line-height: 1.5;
   cursor: pointer;
 }
+
 .footer-col ul li:hover {
-    color: #60fa8a;
+  color: #60fa8a;
 }
 
 /* ===== LOCATIONS ===== */
@@ -126,4 +130,187 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
+}
+
+
+
+
+/* FIXED BUTTON WRAPPER */
+/* WRAPPER */
+.fixed-btn-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  z-index: 9999;
+}
+
+/* COMMON BUTTON */
+.fixed-btn {
+  width: 100%;
+  border: none;
+  padding: 14px 10px;
+  font-size: 15px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* LEFT BUTTON */
+.fixed-whatsapp {
+  background: linear-gradient(180deg, #24b964f7, #404040); 
+  /* background: linear-gradient(360deg, #015f5d 0%, #57f39a 100%); */
+  /* background: #25d366; */
+ } 
+
+
+/* ICON SIZE */
+.fixed-btn i {
+  font-size: 18px;
+}
+
+/* HOVER */
+.fixed-btn:hover {
+  opacity: 0.9;
+}
+
+
+
+.whatsappFixedBtn {
+  border-radius: 20px 20px 0px 0px;
+} 
+
+
+/* MOBILE TWEAK */
+@media (min-width: 992px) {
+  .fixed-btn-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .fixed-btn {
+    font-size: 14px;
+    padding: 13px 6px;
+  }
+}
+
+
+
+/* FLOATING BUTTON WRAPPER */
+.floating-btn-wrapper {
+  position: fixed;
+  bottom: 75px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 9999;
+}
+
+/* COMMON FLOATING BUTTON */
+.floating-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CALL BUTTON */
+.call-btn {
+  background: linear-gradient(135deg, #ff7a18, #ff3d00);
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+/* HOVER EFFECT */
+.floating-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ICON */
+.floating-btn i {
+  font-size: 22px;
+}
+
+/* PULSE EFFECT (WHATSAPP PREMIUM TOUCH) */
+.whatsapp-btn::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.4);
+  animation: pulse 1.8s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* DESKTOP HIDE */
+@media (min-width: 992px) {
+  .floating-btn-wrapper {
+    display: none;
+  }
+}
+
+/* SMALL MOBILE ADJUST */
+@media (max-width: 576px) {
+  .floating-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+  }
+}
+
+
+/* Animation for Fixed Buttons */
+/* Fade + Slide base */
+.animate-fade-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* When visible */
+.animate-fade-slide.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Optional: little delay difference */
+.fixed-btn-wrapper.animate-fade-slide {
+  transition-delay: 0.1s;
+}
+
+.floating-btn-wrapper.animate-fade-slide {
+  transition-delay: 0.2s;
 }
