@@ -35,7 +35,7 @@ export default function PricingSection() {
                         "Thanks!";
         //const message = `नमस्कार, \n मला भाडेकरार (Rent Agreement) संदर्भात माहिती हवी आहे.\n कृपया process आणि charges कळवा. \n\nधन्यवाद!`;
 
-        const whatsappUrl = `https://wa.me/917387484615?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/917709415315?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, "_blank");
     };
 
@@ -85,12 +85,12 @@ export default function PricingSection() {
                   <span>₹1,000</span>
                 </div>
                 <div>
-                    <span>Govt. DHC Fees</span>
+                    <span>Govt. DHC Fee</span>
                     <span>₹300</span>
                 </div>
                 <div>
                   <span>Stamp Duty</span>
-                  <span style={{fontSize:"13px", fontStyle:"normal"}}>Approx. 0.25% of Depend on <br/> duration + rent + deposit</span>
+                  <span className="text-end text-md-start" style={{fontSize:"13px", fontStyle:"italic"}}>Approx. 0.25% of Depend on <br className="d-none d-md-block" /> duration + rent + deposit</span>
                 </div>
               </div>
 

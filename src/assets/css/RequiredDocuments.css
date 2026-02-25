@@ -125,5 +125,6 @@
 
   .docs-image {
     order: 2; /* show SECOND */
+    margin-top: -20px;
   }
 }

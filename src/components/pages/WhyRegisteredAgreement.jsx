@@ -26,7 +26,7 @@ function WhyRegisteredAgreement() {
             <div className="container">
 
                 {/* Heading */}
-                <div className="text-center mb-5">
+                <div className="text-center  mb-3 mb-md-5 ">
                     <h2 className="fw-bold">
                         Why You Need a Registered <span className="HeadCstmColor">Rent Agreement</span> ?
                     </h2>

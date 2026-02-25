@@ -92,7 +92,7 @@ const reviews = [
       <div className="container">
         <div className="row align-items-center g-4">
           <div className="col-12 col-md-12 col-lg-12 text-center">
-            <h2 className="fw-bold mb-3">
+            <h2 className="fw-bold mb-2 mb-md-3">
               Official Legal <span className="HeadCstmColor">Authority & Safety</span>
             </h2>
           </div>
@@ -203,7 +203,7 @@ const reviews = [
           {/* TRUST BAR */}
           <div className="col-12">
             <div className="trust-card d-flex align-items-center justify-content-between">
-              <div className="avatars d-none d-md-block d-md-flex">
+              <div className="avatars ">
                 <span>
                   <img src={user1} width="25" alt="" />
                 </span>

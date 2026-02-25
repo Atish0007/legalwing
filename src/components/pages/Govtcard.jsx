@@ -54,7 +54,7 @@ function Govtcard(){
 
                     {/* CONTENT */}
                     <div className="w-100">
-                    <h5 className="fw-bold mb-1">
+                    <h5 className="fw-bold mb-1 ms-4 ms-md-0">
                         Maharashtra Government
                     </h5>
                     <p className="small text-muted mb-3">

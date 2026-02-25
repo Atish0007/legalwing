@@ -127,10 +127,14 @@
 @media(max-width:576px){
   .reg-box{
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin-left: -70px;
   }
   .reg-chip{
     width: 100%;
     text-align: center;
+  }
+  .govt-card{
+    padding: 35px 20px;
   }
 }

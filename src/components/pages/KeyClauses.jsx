@@ -48,7 +48,7 @@ export default function KeyClauses() {
 
                         {/* LEFT : HEADING */}
                         <div className="col-lg-6 col-md-7">
-                            <h2 className="header-title pt-5 ms-0 ms-md-5 ">
+                            <h2 className="header-title mt-4 mt-md-0 pt-1 pt-md-5 ms-0 ms-md-5 ">
                                 <span>Key Clauses</span> Included in <br />
                                 a <strong>Rent Agreement</strong>
                             </h2>
@@ -72,7 +72,7 @@ export default function KeyClauses() {
                             <div className="clause-card" key={index}>
                                 <div className="d-flex align-items-center justify-content-center"> {/*clause-left*/}
                                     <span className="clause-number"><img src={item.icon} alt={item.title} width="100" style={{ padding: "12px", transform:"scale(1.3)"}} /></span>
-                                    <p className="fs-5 ms-5" style={{ paddingTop: "20px" }}>{item.title}</p>
+                                    <p className="fs-6 fs-md-5 ms-5" style={{ paddingTop: "20px" }}>{item.title}</p>
                                 </div>
                                  <img
                                         src={shield}

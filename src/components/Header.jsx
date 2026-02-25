@@ -38,7 +38,7 @@ function Header() {
                         "Thanks!";
         //const message = `नमस्कार, \n मला भाडेकरार (Rent Agreement) संदर्भात माहिती हवी आहे.\n कृपया process आणि charges कळवा. \n\nधन्यवाद!`;
 
-        const whatsappUrl = `https://wa.me/917387484615?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/917709415315?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, "_blank");
     };
 
@@ -88,8 +88,8 @@ function Header() {
                             <a className="btn legal-whatsapp" href="#" onClick={handleWhatsApp}>
                                 <FaWhatsapp /> WhatsApp
                             </a>
-                            <a className="btn legal-call" href="tel:7387484615">
-                                <FaPhoneAlt /> 7387484615
+                            <a className="btn legal-call" href="tel:7709415315">
+                                <FaPhoneAlt /> 7709415315
                             </a>
                         </div>
                     </div>

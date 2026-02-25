@@ -14,7 +14,7 @@ export default function RentCTAAlt() {
             "Thanks!";
         //const message = `नमस्कार, \n मला भाडेकरार (Rent Agreement) संदर्भात माहिती हवी आहे.\n कृपया process आणि charges कळवा. \n\nधन्यवाद!`;
 
-        const whatsappUrl = `https://wa.me/917387484615?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/917709415315?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, "_blank");
     };
 

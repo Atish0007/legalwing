@@ -1,10 +1,6 @@
 import "../assets/css/footer.css";
-import {
-  FaWhatsapp,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { BsDiamondHalf } from 'react-icons/bs';
 
 export default function Footer() {
   return (
@@ -13,22 +9,12 @@ export default function Footer() {
 
         {/* Brand */}
         <div className="footer-col brand-col">
-          <h3>LegalWing</h3>
+          <h3 className="legal-footer-brand"><BsDiamondHalf className="ftr-brand-icon" /> LegalWing</h3>
           <p>
             Trusted platform for government-registered rent agreements,
             ensuring legal protection for property owners and tenants
             with a seamless doorstep process.
           </p>
-
-          {/* <a
-            href="https://wa.me/919999999999"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-whatsapp"
-          >
-            <FaWhatsapp />
-            Chat on WhatsApp
-          </a> */}
         </div>
 
         {/* Services */}
@@ -42,36 +28,41 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Quick Links */}
-        <div className="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>FAQs</li>
-            <li>Contact</li>
-          </ul>
+        {/* Locations (SPECIAL WRAPPER) */}
+        <div className="footer-col locations-col">
+          <h4 className="locations-title">Locations</h4>
+
+          <div className="locations-grid">
+            <ul>
+              <li>Kothrud</li>
+              <li>Bavdhan</li>
+              <li>Karve Nagar</li>
+              <li>Shivaji Nagar</li>
+              <li>Katraj</li>
+            </ul>
+
+            <ul>
+              <li>Hinjewadi</li>
+              <li>Wakad</li>
+              <li>Baner</li>
+              <li>Aundh</li>
+              <li>Pimpri</li>
+            </ul>
+          </div>
         </div>
 
         {/* Contact */}
         <div className="footer-col">
           <h4>Contact</h4>
           <ul className="contact-list">
-            <li>
-              <FaPhoneAlt /> +91 7387484615
-            </li>
-            <li>
-              <FaEnvelope /> support@legalwing.in
-            </li>
-            <li>
-              <FaMapMarkerAlt /> Pune, Maharashtra
-            </li>
+            <li><FaPhoneAlt /> +91 7387484615</li>
+            <li><FaEnvelope /> reg.rentagreement@legalwing.in</li>
+            <li><FaMapMarkerAlt /> Pune, Maharashtra</li>
           </ul>
         </div>
 
       </div>
 
-      {/* Bottom */}
       <div className="footer-bottom">
         © {new Date().getFullYear()} LegalWing. All rights reserved.
       </div>

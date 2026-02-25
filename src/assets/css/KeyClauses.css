@@ -96,7 +96,7 @@
     }
 
     .header-title {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .header-image img {
@@ -209,7 +209,7 @@
     }
 
     .clause-card {
-        padding: 16px;
+        padding: 6px 16px;
     }
 
     .clause-left p {

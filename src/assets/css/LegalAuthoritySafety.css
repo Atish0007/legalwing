@@ -279,12 +279,15 @@
     animation-duration: 80s; /* slower on mobile */
   }
   .ratingClass{
-    width: 60px !important;  
-    margin-left: 15px;
-    transform: scale(2.7);
+    width: 55px !important;  
+    /* margin-left: 15px;
+    transform: scale(2.7); */
   }
   .stat-card h2{
     font-size: 20px;
+  }
+  .trust-card{
+    gap: 20px;
   }
 }
 

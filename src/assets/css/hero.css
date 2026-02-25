@@ -129,7 +129,8 @@
   }
   .homeBG{
     min-height: unset !important;
-    background-position: 10% 100%;
+    /* background-position: 10% 100%; */
+    background-position: 11% 50%;
   }
   
   .hero-title {
@@ -146,5 +147,8 @@
   
   .hero-card {
     bottom: -12px;
+  }
+  .hero-features{
+    gap:5px;
   }
 }
