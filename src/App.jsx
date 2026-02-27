@@ -18,28 +18,28 @@ import Footer from './components/Footer';
 function App() {
 
 //Prevent Inspect  
-// useEffect(() => {
-//    const handleContextMenu = (e) => {
-//       e.preventDefault();
-//     };
-//   const handleKeyDown = (e) => {
-//     if (
-//       e.key === "F12" ||
-//       (e.ctrlKey && e.shiftKey && e.key === "I") ||
-//       (e.ctrlKey && e.shiftKey && e.key === "J") ||
-//       (e.ctrlKey && e.key === "U")
-//     ) {
-//       e.preventDefault();
-//     }
-//   };
-//   document.addEventListener("contextmenu", handleContextMenu);
-//   document.addEventListener("keydown", handleKeyDown);
+useEffect(() => {
+   const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+  const handleKeyDown = (e) => {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && e.key === "I") ||
+      (e.ctrlKey && e.shiftKey && e.key === "J") ||
+      (e.ctrlKey && e.key === "U")
+    ) {
+      e.preventDefault();
+    }
+  };
+  document.addEventListener("contextmenu", handleContextMenu);
+  document.addEventListener("keydown", handleKeyDown);
 
-//   return () => {
-//     document.removeEventListener("keydown", handleKeyDown);
-//     document.removeEventListener("contextmenu", handleContextMenu);
-//   };
-// }, []);
+  return () => {
+    document.removeEventListener("keydown", handleKeyDown);
+    document.removeEventListener("contextmenu", handleContextMenu);
+  };
+}, []);
 
 
   return (
