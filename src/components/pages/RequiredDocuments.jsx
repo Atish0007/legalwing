@@ -1,5 +1,5 @@
 import "../../assets/css/RequiredDocuments.css";
-import ownerImg from "../../assets/images/requireDoc/map.png"; // LEFT IMAGE
+import ownerImg from "../../assets/images/requireDoc/map.png"; 
 import aadhaarImg from "../../assets/images/requireDoc/aadhar.png";
 import panImg from "../../assets/images/requireDoc/pan.png";
 import electricityImg from "../../assets/images/requireDoc/home.png";
@@ -29,9 +29,6 @@ export default function RequiredDocuments() {
         <h2 className="docs-title">
           Required <span className="HeadCstmColor">Documents</span>
         </h2>
-        {/* <p className="docs-sub">
-          Simple and transparent documentation for smooth agreement registration
-        </p> */}
 
         <div className="docs-layout pt-4">
           {/* LEFT IMAGE */}

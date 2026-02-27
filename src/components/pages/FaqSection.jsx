@@ -77,7 +77,7 @@ export default function FaqSection() {
           </div>
 
           {/* RIGHT FAQ */}
-          <div className="col-lg-7"> {/* data-aos="fade-left" */}
+          <div className="col-lg-7">
             <div className="faq-card">
               {faqs.map((item, i) => (
                 <div

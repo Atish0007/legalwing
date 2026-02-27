@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "../assets/css/footer.css";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-// import { BsDiamondHalf } from 'react-icons/bs';
 import legalwingLogo from "../assets/images/legalwingLogo.png";
 
 export default function Footer() {
@@ -36,10 +35,6 @@ export default function Footer() {
     const msg =
       "नमस्कार,\n" +
       "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
-      // "कृपया खालील माहिती द्यावी:\n" +
-      // "• प्रक्रिया\n" +
-      // "• लागणारी कागदपत्रे\n" +
-      // "• शुल्क\n\n" +
       "धन्यवाद!";
 
     window.open(
@@ -159,8 +154,6 @@ export default function Footer() {
           Get Your Draft
         </button>
       </div>
-      
-
 
     </footer>
   );

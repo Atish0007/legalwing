@@ -3,7 +3,7 @@
     background-size: contain;
     background-position: 72%;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 30vh;
     text-align: center;
     box-shadow: 0 4px 6px -6px #222;
     -webkit-box-shadow: 0 4px 6px -6px #222;
@@ -150,5 +150,11 @@
   }
   .hero-features{
     gap:5px;
+  }
+}
+
+@media (max-width: 1000px){
+  .homeBG{
+    background-position: center !important;
   }
 }

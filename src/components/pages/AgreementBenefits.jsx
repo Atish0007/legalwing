@@ -30,7 +30,6 @@ export default function AgreementBenefits() {
 
                 <div className="text-center mb-4 mb-md-5">
                     <h2 className="fw-bold">How a Rent Agreement Protects <span className="HeadCstmColor">Owners & Tenants</span> ?</h2>
-                    {/* <p className="text-muted mt-2">Unregistered or notarized agreements carry serious legal risks for both property owners and tenants.</p> */}
                 </div>
 
                 <div className="cards-wrapper">

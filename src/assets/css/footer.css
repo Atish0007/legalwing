@@ -3,7 +3,6 @@
   background: radial-gradient(circle at top, #0f1f2d, #08131d);
   color: #d1d5db;
   font-size: 14px;
-  padding-bottom: 60px;
 }
 
 .legal-footer-brand {
@@ -133,8 +132,6 @@
 }
 
 
-
-
 /* FIXED BUTTON WRAPPER */
 /* WRAPPER */
 .fixed-btn-wrapper {
@@ -162,9 +159,7 @@
 
 /* LEFT BUTTON */
 .fixed-whatsapp {
-  background: linear-gradient(180deg, #24b964f7, #404040); 
-  /* background: linear-gradient(360deg, #015f5d 0%, #57f39a 100%); */
-  /* background: #25d366; */
+  background: linear-gradient(180deg, #24b964f7, #404040);
  } 
 
 
@@ -287,6 +282,9 @@
     height: 52px;
     font-size: 20px;
   }
+  .premium-footer {
+  padding-bottom: 60px;
+}
 }
 
 
@@ -314,3 +312,4 @@
 .floating-btn-wrapper.animate-fade-slide {
   transition-delay: 0.2s;
 }
+

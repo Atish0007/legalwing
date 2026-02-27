@@ -36,7 +36,6 @@
     position: relative;
     transition: 0.4s ease;
     border: 3px solid #61cf7859;
-    /* 1px solid rgba(79, 124, 255, 0.15); */
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
 }
@@ -55,7 +54,6 @@
     width: 40px;
     height: 40px;
     background: linear-gradient(135deg, #015f5d 0%, #57f39a 100%);
-    /* background: linear-gradient(135deg, #1e3a8a, #2563eb); */
     color: #fff;
     border-radius: 50%;
     font-weight: 700;
@@ -101,57 +99,6 @@
     }
 
 }
-
-
-
-/* arrow for card */
-/* .steps-wrapper {
-  display: flex;
-  gap: 40px;
-  position: relative;
-  justify-content: space-between;
-}
-
-.step-card {
-  position: relative;
-  background: #fff;
-  padding: 30px 20px;
-  border-radius: 16px;
-  text-align: center;
-  width: 100%;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-
-.step-card::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -30px;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  border-top: 3px solid #0d6efd;
-  border-right: 3px solid #0d6efd;
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.step-card:last-child::after {
-  display: none;
-}
-
-
-
-@media (max-width: 768px) {
-  .steps-wrapper {
-    flex-direction: column;
-  }
-
-  .step-card::after,
-  .step-card::before {
-    display: none;
-  }
-} */
 
 
 .steps-wrapper {

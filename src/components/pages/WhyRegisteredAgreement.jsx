@@ -42,9 +42,8 @@ function WhyRegisteredAgreement() {
                         <div className="col-12 col-md-6 col-lg-3" key={i}>
                             <div className="rent-card h-100">
 
-                                <div className="RegIcon text-center">  {/* icon-box */}
-                                    {/* <span className="step-badge">{i + 1}</span> */}
-                                    <img className="img-fluid mb-1" src={item.icon} alt={item.title} style={{transform:"scale(1.3)"}} />
+                                <div className="RegIcon text-center">
+                                    <img className="img-fluid mb-1" src={item.icon} alt={item.title} style={{ transform: "scale(1.3)" }} />
                                 </div>
 
                                 <h5 className="fw-semibold mt-3 text-center">{item.title}</h5>

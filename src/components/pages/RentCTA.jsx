@@ -16,7 +16,6 @@ export default function RentCTAAlt() {
         );
     };
 
-
     return (
         <section className="cta-alt-section py-5">
             <div className="cta-alt-wrapper">
@@ -42,14 +41,6 @@ export default function RentCTAAlt() {
                         Chat with us on WhatsApp
                     </a>
                 </div>
-
-                {/* <div className="cta-alt-visual">
-          <div className="glass-card">
-            <span>✔ Government Registered</span>
-            <span>✔ Doorstep Process</span>
-            <span>✔ Legal Validity</span>
-          </div>
-        </div> */}
 
             </div>
         </section>

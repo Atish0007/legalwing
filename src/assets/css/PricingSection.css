@@ -61,7 +61,6 @@
     background: linear-gradient(180deg, #24b964f7, #404040);
     color: #ededed;
     font-weight: 500;
-    /* margin-bottom: 18px; */
     filter: drop-shadow(0px 0px 50px #dcdcdc);
 }
 
@@ -117,7 +116,4 @@
     .price-glass-card {
         padding: 28px;
     }
-    /* .pricing-info {
-        margin-left: 25px;
-    } */
 }

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-// import { BsDiamondHalf } from 'react-icons/bs';
 import "../assets/css/header.css";
 import legalwingLogo from "../assets/images/legalwingLogo.png";
 
@@ -66,17 +65,7 @@ function Header() {
                         <div className="collapse navbar-collapse" id="legalNavbar">
                             <ul className="navbar-nav mx-auto legal-menu">
                                 <li className="nav-item">
-                                    {/* <a className="nav-link" href="#">About Us</a> */}
                                 </li>
-                                {/* <li className="nav-item">
-                                <a className="nav-link" href="#">Services</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Support</a>
-                            </li> */}
                             </ul>
 
                             {/* CTA */}

@@ -1,10 +1,4 @@
 import "../../assets/css/HowItWorks.css";
-import {
-  FaWhatsapp,
-  FaFileSignature,
-  FaFingerprint,
-  FaTruck
-} from "react-icons/fa";
 
 import one from "../../assets/images/howitworks/1.png";
 import two from "../../assets/images/howitworks/2.png";
@@ -22,19 +16,19 @@ const steps = [
     id: 2,
     title: "Draft Approval",
     desc: "We prepare the legal draft. You review it and suggest changes if any.",
-    icon: two,  /*<FaFileSignature />*/
+    icon: two,  
   },
   {
     id: 3,
     title: "Biometric",
-    desc: "Our executive visits your doorstep for fingerprint & photo verification.",
-    icon: three, /* <FaFingerprint /> */
+    desc: "Our executive visit your doorstep for photo capture and Adhar KYC verification.",
+    icon: three, 
   },
   {
     id: 4,
     title: "Delivery",
-    desc: "Get the digital copy in 24h & physical copy at your doorstep in 48h.",
-    icon: four, /* <FaTruck /> */
+    desc: "Get the digital Registered Agreement Copy delivered by E-mail and Whats App.",
+    icon: four, 
   },
 ];
 

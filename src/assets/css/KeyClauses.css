@@ -1,6 +1,5 @@
 .key-clauses-header {
     background-image: url(../../assets/images/keyclause/headingBG.png);
-    /* soft wave bg */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -20,7 +19,6 @@
 
 .header-title span {
     color: #16a34a;
-    /* green like image */
     font-weight: 700;
 }
 
@@ -31,7 +29,6 @@
 .header-img {
     max-width: 100%;
     height: auto;
-    /* 🔥 important */
 }
 
 
@@ -41,14 +38,6 @@
     padding: 50px 16px;
 }
 
-/* .clauses-header-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-} */
 
 /* LEFT TEXT */
 .header-text h2 {

@@ -25,16 +25,16 @@ export default function PricingSection() {
 
 
   const handleWhatsApp = () => {
-        const msg =
-            "नमस्कार,\n" +
-            "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
-            "धन्यवाद!";
+    const msg =
+      "नमस्कार,\n" +
+      "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
+      "धन्यवाद!";
 
-        window.open(
-            `https://wa.me/917709415315?text=${encodeURIComponent(msg)}`,
-            "_blank"
-        );
-    };
+    window.open(
+      `https://wa.me/917709415315?text=${encodeURIComponent(msg)}`,
+      "_blank"
+    );
+  };
 
 
   return (
@@ -52,7 +52,6 @@ export default function PricingSection() {
           <div className="col-lg-6 ps-5">
             <div className="pricing-info">
               <h4>Rent Agreement Package Includes:</h4>
-
               <ul>
                 <li><BsCheck2Circle /> Biometric Verification 1 visit</li>
                 <li><BsCheck2Circle /> Drafting by Legal Expert</li>
@@ -82,12 +81,12 @@ export default function PricingSection() {
                   <span>₹1,000</span>
                 </div>
                 <div>
-                    <span>Govt. DHC Fee</span>
-                    <span>₹300</span>
+                  <span>Govt. DHC Fee</span>
+                  <span>₹300</span>
                 </div>
                 <div>
                   <span>Stamp Duty</span>
-                  <span className="text-end text-md-start" style={{fontSize:"13px", fontStyle:"italic"}}>Approx. 0.25% of Depend on <br className="d-none d-md-block" /> duration + rent + deposit</span>
+                  <span className="text-end text-md-start" style={{ fontSize: "13px", fontStyle: "italic" }}>Approx. 0.25% of Depend on <br className="d-none d-md-block" /> duration + rent + deposit</span>
                 </div>
               </div>
 

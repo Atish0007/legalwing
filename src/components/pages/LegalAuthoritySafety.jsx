@@ -1,4 +1,3 @@
-// import { useEffect, useState } from "react";
 import "../../assets/css/LegalAuthoritySafety.css";
 import AnimatedCounter from "../AnimatedCounter";
 
@@ -10,55 +9,47 @@ import user5 from "../../assets/images/gglrating/user5_pratham_D.png";
 import ratingImg from "../../assets/images/rating.png";
 
 function LegalAuthoritySafety() {
-  // const [reviews, setReviews] = useState([]);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:5000/api/reviews")
-  //     .then((res) => res.json())
-  //     .then((data) => setReviews(data))
-  //     .catch((err) => console.error(err));
-  // }, []);
-
-const reviews = [
-  {
-    name: "Abhishek Margale",
-    rating: 4.9,
-    text: "Authentic and very fast service. We satisfy..Gratitude thanks...",
-    time: "2 weeks ago",
-    profilePhoto: user1
-  },
-  {
-    name: "Rushikesh Shahane",
-    rating: 5,
-    text: "Very good service...",
-    time: "2 weeks ago",
-    profilePhoto: user2
-  },
-  {
-    name: "Rajan Ghosh",
-    rating: 5,
-    text: "Very prompt and efficient service...",
-    time: "3 months ago",
-    profilePhoto: user3
-  },
-  {
-    name: "Omkar Palange",
-    rating: 4.9,
-    text: "Excellent service by Legalwing!",
-    time: "2 weeks ago",
-    profilePhoto: user4
-  },
-  {
-    name: "Pratham Devle",
-    rating: 5,
-    text: "Good service and excellent staff",
-    time: "2 months ago",
-    profilePhoto: user5
-  }
-];
+  const reviews = [
+    {
+      name: "Abhishek Margale",
+      rating: 4.9,
+      text: "Authentic and very fast service. We satisfy..Gratitude thanks...",
+      time: "2 weeks ago",
+      profilePhoto: user1
+    },
+    {
+      name: "Rushikesh Shahane",
+      rating: 5,
+      text: "Very good service...",
+      time: "2 weeks ago",
+      profilePhoto: user2
+    },
+    {
+      name: "Rajan Ghosh",
+      rating: 5,
+      text: "Very prompt and efficient service...",
+      time: "3 months ago",
+      profilePhoto: user3
+    },
+    {
+      name: "Omkar Palange",
+      rating: 4.9,
+      text: "Excellent service by Legalwing!",
+      time: "2 weeks ago",
+      profilePhoto: user4
+    },
+    {
+      name: "Pratham Devle",
+      rating: 5,
+      text: "Good service and excellent staff",
+      time: "2 months ago",
+      profilePhoto: user5
+    }
+  ];
 
 
-  // ⭐⭐⭐⭐⭐ STAR RENDER FUNCTION (FULL + HALF + EMPTY)
+  // ⭐STAR RENDER FUNCTION
   const renderStars = (rating) => {
     const stars = [];
 
@@ -177,9 +168,7 @@ const reviews = [
                         <div className="rating-stars">
                           {renderStars(review.rating)}
                         </div>
-
                         <p className="rating-text">“{review.text}”</p>
-
                         <div className="rating-user">
                           <div className="avatar">
                             <img

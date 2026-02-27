@@ -21,6 +21,13 @@ function Hero() {
         );
     };
 
+    const width = window.innerWidth;
+
+if (width < 480) console.log("Mobile");
+else if (width < 768) console.log("Tablet");
+else if (width < 1024) console.log("Laptop");
+else console.log("Desktop");
+
   return (
     <section className="hero-section homeBG">
       <div className="container">
