@@ -3,7 +3,7 @@ import "../assets/css/footer.css";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import legalwingLogo from "../assets/images/legalwingLogo.png";
 
-export default function Footer() {
+export default function Footer({openForm}) {
 
   // For Show Fixed btn
   const [showWhatsAppBtn, setShowWhatsAppBtn] = useState(false);
@@ -32,6 +32,14 @@ export default function Footer() {
 
   // Fixed Whats app Circle
   const handleFooterWhatsAppBtn = () => {
+
+    // Google Ads Conversion Trigger
+    // if (window.gtag) {
+    //   window.gtag('event', 'conversion', {
+    //     'send_to': 'AW-17981192076/7709415315'
+    //   });
+    // }
+
     const msg =
       "नमस्कार,\n" +
       "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
@@ -45,15 +53,26 @@ export default function Footer() {
 
   // Fixed Draft Button
   const handleFooterDraftBtn = () => {
-    const msg =
-      "नमस्कार,\n" +
-      "मला रजिस्टर भाडेकरार याचा Draft हवा आहे.\n\n" +
-      "धन्यवाद!";
 
-    window.open(
-      `https://wa.me/917709415315?text=${encodeURIComponent(msg)}`,
-      "_blank"
-    );
+    // Google Ads Conversion Trigger
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17981192076/7709415315'
+      });
+    }
+
+    // const msg =
+    //   "नमस्कार,\n" +
+    //   "मला रजिस्टर भाडेकरार याचा Draft हवा आहे.\n\n" +
+    //   "धन्यवाद!";
+
+    // window.open(
+    //   `https://wa.me/917709415315?text=${encodeURIComponent(msg)}`,
+    //   "_blank"
+    // );
+
+
+
   }
 
   return (
@@ -149,7 +168,8 @@ export default function Footer() {
         className={`fixed-btn-wrapper mobile-only animate-fade-slide ${showDraftBtn ? "show" : ""
           }`}
       >
-        <button className="fixed-btn fixed-whatsapp fs-3 whatsappFixedBtn text-uppercase" onClick={handleFooterDraftBtn}>
+        <button className="fixed-btn fixed-whatsapp fs-3 whatsappFixedBtn text-uppercase" onClick={() => openForm("Price Calculate")}>  {/* onClick={handleFooterDraftBtn} */}
+          
           <i className="fab fa-whatsapp me-2 fs-3"></i>
           Get Your Draft
         </button>

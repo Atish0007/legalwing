@@ -1,0 +1,145 @@
+/* SECTION */
+.agreement-sec {
+    padding: 20px 0 10px;
+    background: #f5f7f6;
+}
+
+/* WRAPPER */
+.agreement-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.agreement-card {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    background: #fff;
+}
+
+.agreement-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.agreement-card img {
+    width: 100%;
+    height: 288px;
+    /* object-fit: cover; */
+    display: block;
+    transition: 0.5s ease;
+}
+
+/* BLUR */
+.agreement-blur img {
+    filter: blur(2px);
+    transform: scale(1.03);
+}
+
+/* BLACK STRIP TEXT */
+.agreement-cta-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 14px 10px;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    letter-spacing: 0.5px;
+}
+
+/* OVERLAY */
+.agreement-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTON */
+.agreement-overlay button {
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+.agreement-overlay button:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.28);
+}
+
+/* UNLOCKED */
+.agreement-unlocked {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.agreement-unlocked h6 {
+    color: #ffc300;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .agreement-sec {
+        padding: 10px 0;
+    }
+
+    .agreement-card {
+        border-radius: 10px;
+    }
+
+    .agreement-cta-text {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .agreement-overlay button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .agreement-card img {
+        height: 225px;
+     }
+
+    .agreement-cta-text {
+        font-size: 16px;
+    }
+
+    .agreement-overlay button {
+        font-size: 13px;
+        padding: 9px 16px;
+    }
+}

@@ -10,23 +10,31 @@ import { MdCheckCircle } from "react-icons/md";
 function Hero() {
 
   const handleWhatsApp = () => {
-        const msg =
-            "नमस्कार,\n" +
-            "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
-            "धन्यवाद!";
 
-        window.open(
-            `https://wa.me/917709415315?text=${encodeURIComponent(msg)}`,
-            "_blank"
-        );
-    };
+    // Google Ads Conversion Trigger
+    // if (window.gtag) {
+    //   window.gtag('event', 'conversion', {
+    //     'send_to': 'AW-17981192076/7709415315'
+    //   });
+    // }
 
-    const width = window.innerWidth;
+    const msg =
+      "नमस्कार,\n" +
+      "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
+      "धन्यवाद!";
 
-if (width < 480) console.log("Mobile");
-else if (width < 768) console.log("Tablet");
-else if (width < 1024) console.log("Laptop");
-else console.log("Desktop");
+    window.open(
+      `https://wa.me/917709415315?text=${encodeURIComponent(msg)}`,
+      "_blank"
+    );
+  };
+
+  const width = window.innerWidth;
+
+  if (width < 480) console.log("Mobile");
+  else if (width < 768) console.log("Tablet");
+  else if (width < 1024) console.log("Laptop");
+  else console.log("Desktop");
 
   return (
     <section className="hero-section homeBG">
@@ -34,12 +42,12 @@ else console.log("Desktop");
         <div className="row align-items-center gy-5 pt-5">
 
           {/* LEFT CONTENT */}
-          <div className="col-lg-6 text-start"> 
+          <div className="col-lg-6 text-start">
             <span className="hero-badge">AUTHORIZED LEGAL PARTNER</span>
 
             <h1 className="hero-title">
               Rent Agreement Registrations&nbsp;
-              <span>in Kothrud</span>
+              <span>in Pune</span>
             </h1>
 
             {/* <h3 className="fw-bold pt-2">Starting at <span className="HeadCstmColor">₹799</span> + <small className="text-muted fs-13">Govt. Charges</small></h3> */}
@@ -68,7 +76,7 @@ else console.log("Desktop");
                 Check Your Price
               </button>
               <button className="btn btn-outline-success hero-btn-outline">
-               <FaPhone /> Talk to Expert
+                <FaPhone /> Talk to Expert
               </button>
             </div>
 
@@ -82,13 +90,13 @@ else console.log("Desktop");
 
           {/* Mobile View Only Buttons */}
           <div className="hero-actions d-block d-md-none d-grid">
-              <button className="btn btn-success hero-btn" onClick={handleWhatsApp}>
-                Check Your Price
-              </button>
-              <a href="tel:7709415315" className="btn btn-outline-success hero-btn-outline">
-               <FaPhone /> Talk to Expert
-              </a>
-            </div>
+            <button className="btn btn-success hero-btn" onClick={handleWhatsApp}>
+              Check Your Price
+            </button>
+            <a href="tel:7709415315" className="btn btn-outline-success hero-btn-outline">
+              <FaPhone /> Talk to Expert
+            </a>
+          </div>
 
           {/* RIGHT IMAGE */}
           {/* <div className="col-lg-6 text-center">

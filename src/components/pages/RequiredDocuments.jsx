@@ -18,7 +18,7 @@ const documents = [
   {
     img: electricityImg,
     name: "Electricity Bill / Index 2",
-    role: "Owner / Tenant",
+    role: "Rental Property Documents",
   },
 ];
 

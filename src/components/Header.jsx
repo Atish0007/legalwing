@@ -28,6 +28,14 @@ function Header() {
     }, [lastScrollY]);
 
     const handleWhatsApp = () => {
+
+        // Google Ads Conversion Trigger
+        // if (window.gtag) {
+        //     window.gtag('event', 'conversion', {
+        //         'send_to': 'AW-17981192076/7709415315'
+        //     });
+        // }
+
         const msg =
             "नमस्कार,\n" +
             "मला रजिस्टर भाडेकरार करायचा आहे.\n\n" +
