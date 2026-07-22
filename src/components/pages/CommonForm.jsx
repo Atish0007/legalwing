@@ -72,8 +72,8 @@ const CommonForm = ({ isOpen, onClose, title, onSuccess }) => {
         try {
 
             await axios.post(
-                "http://localhost/legalwing_api/send-mail.php",
-                //"https://rentagreementkothrud.com/api/send-mail.php",
+                //"http://localhost/legalwing_api/send-mail.php",
+                "https://rentagreementkothrud.com/api/send-mail.php",
                 {
                     name: formData.name,
                     phone: formData.phone,

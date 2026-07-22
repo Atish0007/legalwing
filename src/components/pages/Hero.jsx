@@ -72,10 +72,10 @@ function Hero() {
 
             {/* Desktop View Only Button */}
             <div className="hero-actions d-none d-md-block d-md-flex">
-              <button className="btn btn-success hero-btn">
+              <button className="btn btn-success hero-btn" aria-label="Check Your Price" >
                 Check Your Price
               </button>
-              <button className="btn btn-outline-success hero-btn-outline">
+              <button className="btn btn-outline-success hero-btn-outline" aria-label="Talk To Expert" >
                 <FaPhone /> Talk to Expert
               </button>
             </div>
@@ -90,10 +90,10 @@ function Hero() {
 
           {/* Mobile View Only Buttons */}
           <div className="hero-actions d-block d-md-none d-grid">
-            <button className="btn btn-success hero-btn" onClick={handleWhatsApp}>
+            <button className="btn btn-success hero-btn" onClick={handleWhatsApp} aria-label="Check Your Price" >
               Check Your Price
             </button>
-            <a href="tel:7709415315" className="btn btn-outline-success hero-btn-outline">
+            <a href="tel:7709415315" className="btn btn-outline-success hero-btn-outline" aria-label="Talk To Expert" >
               <FaPhone /> Talk to Expert
             </a>
           </div>

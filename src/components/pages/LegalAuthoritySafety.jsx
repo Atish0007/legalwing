@@ -150,7 +150,7 @@ function LegalAuthoritySafety() {
                   <img
                     src={ratingImg}
                     width="95"
-                    alt=""
+                    alt="Google Rating 4.9 out of 5"
                     className="ratingClass me-1 me-md-2"
                   />
                   <h2>
@@ -175,7 +175,7 @@ function LegalAuthoritySafety() {
                               src={review.profilePhoto}
                               style={{ borderRadius: "50%" }}
                               width="35"
-                              alt={review.name}
+                              alt={`${review.name} Google Review`}
                             />
                           </div>
                           <span>{review.name}</span>
@@ -194,11 +194,11 @@ function LegalAuthoritySafety() {
             <div className="trust-card d-flex align-items-center justify-content-between">
               <div className="avatars ">
                 <span>
-                  <img src={user1} width="25" alt="" />
+                  <img src={user1} width="25" alt="Verified Customer" />
                 </span>
-                <span><img src={user2} width="25" alt="" /></span>
+                <span><img src={user2} width="25" alt="Verified Customer" /></span>
                 <span>
-                  <img src={user3} width="25" alt="" />
+                  <img src={user3} width="25" alt="Verified Customer" />
                 </span>
                 <span className="count">+2k</span>
               </div>

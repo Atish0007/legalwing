@@ -11,7 +11,7 @@ export default function Footer({openForm}) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const whatsappTrigger = document.getElementById("show-fixed-whatsapp-button");
+      const whatsappTrigger = document.getElementById("agreement-benefits");
       const draftTrigger = document.getElementById("show-fixed-draft-button");
 
       if (whatsappTrigger) {
@@ -168,7 +168,7 @@ export default function Footer({openForm}) {
         className={`fixed-btn-wrapper mobile-only animate-fade-slide ${showDraftBtn ? "show" : ""
           }`}
       >
-        <button className="fixed-btn fixed-whatsapp fs-3 whatsappFixedBtn text-uppercase" onClick={() => openForm("Price Calculate")}>  {/* onClick={handleFooterDraftBtn} */}
+        <button className="fixed-btn fixed-whatsapp fs-3 whatsappFixedBtn text-uppercase" onClick={() => openForm("Price Calculate")} aria-label="Get Your Draft" >  {/* onClick={handleFooterDraftBtn} */}
           
           <i className="fab fa-whatsapp me-2 fs-3"></i>
           Get Your Draft

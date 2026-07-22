@@ -98,7 +98,7 @@ export default function PricingSection() {
                 </div>
               </div>
 
-              <button className="btn btn-success w-100 mt-4" onClick={handleWhatsApp}>
+              <button className="btn btn-success w-100 mt-4" onClick={handleWhatsApp} aria-label="Check Your Price" >
                 Check Your Price
               </button>
             </div>

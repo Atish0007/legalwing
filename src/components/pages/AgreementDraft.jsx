@@ -46,7 +46,7 @@ const AgreementDraft = ({ openForm, agreementUnlocked }) => {
                                 </span>
 
                                 <div className="agreement-overlay">
-                                    <button>Download Draft</button>
+                                    <button aria-label="Download Draft" >Download Draft</button>
                                 </div>
                             </>
                         )}

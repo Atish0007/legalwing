@@ -25,11 +25,12 @@ const tenantsBenefits = [
 
 export default function AgreementBenefits() {
     return (
-        <section className="agreement-section py-4" id="show-fixed-whatsapp-button">
+        <section className="agreement-section py-4" id="agreement-benefits">
             <div className="container">
 
                 <div className="text-center mb-4 mb-md-5">
-                    <h2 className="fw-bold">How a Rent Agreement Protects <span className="HeadCstmColor">Owners & Tenants</span> ?</h2>
+                    {/* <h2 className="fw-bold">How a Rent Agreement Protects <span className="HeadCstmColor">Owners & Tenants</span> ?</h2> */}
+                    <h2 className="fw-bold">Benefits of a Registered Rent Agreement for <span className="HeadCstmColor">Owners & Tenants</span> ?</h2>
                 </div>
 
                 <div className="cards-wrapper">
@@ -37,7 +38,7 @@ export default function AgreementBenefits() {
                     {/* Property Owners */}
                     <div className="benefit-card owner-card">
                         <div className="card-header">
-                            <span className="card-icon"><img src={owner} alt="Owner" className="img-fluid AgreementOwnerImg" /></span>
+                            <span className="card-icon"><img src={owner} alt="Property Owner Benefits - Registered Rent Agreement Pune" className="img-fluid AgreementOwnerImg" /></span>
                             <div>
                                 <h3>For Property Owners</h3>
                                 <p>( घरमालक )</p>
@@ -61,7 +62,7 @@ export default function AgreementBenefits() {
                     {/* Tenants */}
                     <div className="benefit-card tenant-card">
                         <div className="card-header">
-                            <span className="card-icon"><img src={rent} alt="Rent" className="img-fluid AgreementRentImg" /></span>
+                            <span className="card-icon"><img src={rent} alt="Tenant Benefits - Registered Rent Agreement Pune" className="img-fluid AgreementRentImg" /></span>
                             <div>
                                 <h3>For Tenants</h3>
                                 <p>( भाडेकरू )</p>
